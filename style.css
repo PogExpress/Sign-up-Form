@@ -1,0 +1,208 @@
+* {
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+
+
+   
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+:root{
+    --fw: 100vw;
+    --fh: 100vh;
+}
+
+/* 
+p {
+   
+    font-weight: 500;
+    font-size: 32px;
+} */
+
+body {
+    display: block;
+    width: --fw;
+    height: --fh;
+}
+
+.splash_image{
+    position: absolute;
+
+    display:block;
+    left: auto;
+    height: 100vh;
+    width: calc(100vw/3);
+    
+}
+
+img[src = "./pictures/background.avif"] {
+   height: 100vh;
+   width: calc(100vw/3);
+   object-fit: cover;
+}
+
+#credit {
+    position: absolute;
+
+    left: auto;
+    top: calc(96vh);
+    width: calc(100vw/3);
+    
+    color: white;
+    text-align: center;
+    font-weight: 350;
+}
+
+a{
+    color: inherit;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url("./Norse-Bold.otf")
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 20vh;
+    font-family: odinFont;
+    font-size: 9vw;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+
+    width: calc(100vw/3);
+    height: 14vw;
+}
+
+img[src = "./pictures/odin-lined.png"]{
+    height: 12vw;
+    width: auto;
+}
+
+two-third{
+    position: relative;
+    
+    display: block; 
+    
+    left: calc(100vw/3);
+    width: calc(200vw/3);
+    height: 100vh;
+
+    background-color: rgba(240, 240, 240, 1);
+    
+    text-shadow: 2px 2px 2px rgba(100,100,100,0.15);
+}
+
+yap, yap1{
+    display: block;
+    position: relative;
+
+    width: 55vw;
+    left: 2vw;
+    line-height: 1.3em;
+   font-weight: 500;
+   font-size: 1.75vw;
+}
+
+yap{
+    margin-top: calc(100vh/6); 
+}
+
+yap1 {
+    display: block;
+    margin-top: 3vh;
+}
+
+whitebit{
+    display: block;
+    position: relative;
+
+    background-color: rgba(250,250,250,1);
+    /* box-shadow: 1px 1px 10px 10px rgba(200,200,200,1); */
+    
+
+
+    margin-top: 6vh;
+
+    height: 40vh;
+    width: calc(200/3vw);
+}
+
+encouragement{
+    display: block;
+    margin-top: 1vh;
+    margin-left: 3vw;
+
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+ul {
+    display: flex;
+    flex-flow: wrap;
+
+    justify-content: flex-start;
+    align-items: center;
+
+
+    
+  
+}
+
+li{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label{
+    color: #555555;
+    font-weight: 500;
+}
+
+input{
+    border-radius: 4px;
+    border: 2px solid rgba(200,200,200,1);
+    height: 25px;
+    width: 200px;
+}
+
+input:invalid{
+    border-color: #DD2244;
+}
+
+button[type="submit"]{
+
+    background-color: #22AA22;
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    width: 175px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    
+}
+
+a[href = "www.google.com"]
+{
+    text-decoration: none;
+    color: #22AA22;
+    font-weight: 500;
+}
+
+
+
+
